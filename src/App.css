@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400&family=Poppins:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: black;
+  /* font-family: Poppins; */
+}
+
+.hPrimary{
+  font-size: 5rem;
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+}
+
+.hSecondary{
+  font-size: 2rem;
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+}
+
+/* Navbar css */
+
+.navbar,
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  padding: 0 5rem;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 2rem;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.navLink {
+  list-style: none;
+  padding: 2rem;
+}
+
+.navLink a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: Open Sans;
+}
+
+.nodeBtn {
+  background-color: rgb(61, 78, 97);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: Poppins;
+}
+
+/* HeroSection CSS */
+
+.container{
+  position: absolute;
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+#subContainerLeft{
+  width: 45%;
+}
+
+#subContainerLeft div{
+  margin: 4rem 0;
+}
+
+#subContainerRight img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.getStartedBtn{
+  color: white;
+  background: none;
+  padding: 1rem;
+  border-radius: 6rem;
+  width: 18rem;
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  border: .1rem solid white;
+}
+
+/* Chat Css */
+
+.chatContainer{
+  /* background: rgb(22 28 32); */
+  position: absolute;
+  width: 100%;
+  height: -webkit-fill-available;
+  /* position: relative; */
+}
+
+.messageSubmitForm{
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  width: -webkit-fill-available;
+  position: absolute;
+  bottom: 0;
+}
+
+.userBox{
+  padding: .8rem 1rem;
+  margin-right: 1rem;
+  border-radius: .5rem;
+  color: white;
+  font-size: 1.5rem;
+  border: .1rem solid gray;
+}
+
+.messageInput{
+  width: 100%;
+  padding: .8rem 1rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  outline: none;
+  background: rgb(52 61 76);
+  border: none;
+}
+
+::placeholder {
+  color: gainsboro;
+}
+
+
+.messages{
+  padding: 2rem;
+}
+
+.userIcon,.AIIcon{
+  font-size: 1.5rem;
+  padding: .8rem 1rem;
+  font-family: Open Sans;
+  width: 8rem;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.userIcon{
+  color: gainsboro;
+  background: rgb(28 32 38);
+}
+
+.AIIcon{
+  color: rgb(173 163 189);
+  background: rgb(31 33 47);
+}
+
+.userMessage{
+  display: flex;
+  align-items: center;
+}
+
+.message{
+  font-size: 1.3rem;
+  width: -webkit-fill-available;
+  padding: 1.5rem;
+}
+
+.AIMessage{
+  border: 1px solid rgba(128, 128, 128, 0.295);
+  background: rgb(27 33 37);
+  border-radius: .5rem;
+}
+
+.buttons{
+  position: absolute;
+  width: -webkit-fill-available;
+  text-align: center;
+  top: -4rem;
+}
+
+.formBtn{
+  margin: 1rem;
+  padding: .5rem;
+  background: rgb(45, 54, 68);
+  border: 1px solid rgba(128, 128, 128, 0.253);
+  color: gainsboro;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-family: Open Sans;
+}
+
+/* Table Css */
+
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-family: Poppins;
+  color: rgb(114, 0, 208);
+}
+
+.api-table th, .api-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.api-table th {
+  background-color: #f2f2f2;
+}
+
+.api-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.api-table input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+/* Add API KEY CSS */
+
+.addAPIContainer .formBtn{
+  background: rgb(51, 151, 190);
+  color: white;
+  float: right;
+  padding: 1rem 2rem;
+}
+
+.modalContainer{
+  position: absolute;
+
+  width: 100%;
+  background: rgba(29, 29, 29, 0.63);
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Assuming this is your main CSS file or you import it in your React component */
+
+/* Modal.css */
+
+/* .modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(29, 29, 29, 0.63);
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 0;
+}
+
+label[for="cardName"] {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.modalContainer form{
+  display: flex;
+  width: fit-content;
+  padding: 4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.233);
+  border-radius: .5rem;
+  flex-direction: column;
+  background: white;
+  width: 25%;
+  position: relative;
+}
+
+.modalContainer form input{
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: .5rem;
+  outline: none;
+  border: 1px solid gray;
+  font-family: Poppins;
+  font-size: 1.4rem;
+}
+
+.modalContainer .submitBtn{
+  background: blueviolet;
+  color: white;
+  border-radius: 5rem;
+  font-family: Open Sans;
+}
+
+.closeBtn{
+  color: red;
+  font-family: Open Sans;
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 2rem;
+  transform: rotate(45deg);
+  top: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
