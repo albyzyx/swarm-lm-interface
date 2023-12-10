@@ -1,5 +1,3 @@
-import React from "react";
-
 function Navbar() {
   return (
     <nav>
@@ -12,10 +10,10 @@ function Navbar() {
             <a href="/">Home</a>
           </li>
           <li className="navLink">
-            <a href="table">Create API</a>
+            <a href="table">Create KEY</a>
           </li>
           <li className="navLink">
-            <a href="chat">API Playground</a>
+            <a href="chat">Playground</a>
           </li>
         </div>
 

@@ -211,6 +211,11 @@ body {
 
 /* Table Css */
 
+.api-table-container {
+  width: 100%;
+  padding: 5rem;
+}
+
 .api-table {
   width: 100%;
   border-collapse: collapse;
@@ -240,6 +245,10 @@ body {
 }
 
 /* Add API KEY CSS */
+
+.addAPIContainer {
+  margin-right: 5rem;
+}
 
 .addAPIContainer .formBtn {
   background: rgb(51, 151, 190);
@@ -308,11 +317,9 @@ body {
   border-radius: 4px;
   background-color: #fff;
   flex-direction: row;
-  
 }
 
 .cards {
-
   display: flex; /* Make the card a flex container */
   flex-direction: row; /* Arrange items in a column */
   justify-content: space-between; /* Space elements evenly */

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import UserMessage from "./UserMessage";
 import AIMessage from "./AIMessage";
 import AILoading from "./AILoading";
