@@ -93,7 +93,7 @@ export const Modal = ({ handleModal, data }) => {
         parseEther(inputCredit),
       ],
     });
-    handleModal();
+    // handleModal();
   };
   return (
     <div className="modalContainer">
@@ -154,7 +154,6 @@ export const Modal = ({ handleModal, data }) => {
         {/* You can add more cards as needed */}
 
         {/* Submit button (if needed) */}
-        <ConnectButton />
         {account.isConnected && (
           <input
             className="submitBtn"

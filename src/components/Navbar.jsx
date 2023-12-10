@@ -1,3 +1,5 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 function Navbar() {
   return (
     <nav>
@@ -17,7 +19,8 @@ function Navbar() {
           </li>
         </div>
 
-        <button className="nodeBtn">Become A Node Provider</button>
+        {/* <button className="nodeBtn">Become A Node Provider</button> */}
+        <ConnectButton />
       </div>
     </nav>
   );
