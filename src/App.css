@@ -15,14 +15,14 @@ body {
   /* font-family: Poppins; */
 }
 
-.hPrimary{
+.hPrimary {
   font-size: 5rem;
   font-family: Poppins;
   font-weight: 500;
   color: white;
 }
 
-.hSecondary{
+.hSecondary {
   font-size: 2rem;
   font-family: Poppins;
   font-weight: 500;
@@ -73,7 +73,7 @@ body {
 
 /* HeroSection CSS */
 
-.container{
+.container {
   position: absolute;
   height: -webkit-fill-available;
   display: flex;
@@ -82,22 +82,20 @@ body {
   padding: 0 5rem;
 }
 
-#subContainerLeft{
+#subContainerLeft {
   width: 45%;
 }
 
-#subContainerLeft div{
+#subContainerLeft div {
   margin: 4rem 0;
 }
 
-#subContainerRight img{
+#subContainerRight img {
   height: 100%;
   width: 100%;
 }
 
-
-
-.getStartedBtn{
+.getStartedBtn {
   color: white;
   background: none;
   padding: 1rem;
@@ -105,20 +103,22 @@ body {
   width: 18rem;
   font-family: Open Sans;
   font-size: 1.8rem;
-  border: .1rem solid white;
+  border: 0.1rem solid white;
 }
 
 /* Chat Css */
 
-.chatContainer{
+.chatContainer {
   /* background: rgb(22 28 32); */
   position: absolute;
   width: 100%;
   height: -webkit-fill-available;
+  overflow: scroll;
+  margin-bottom: 104px;
   /* position: relative; */
 }
 
-.messageSubmitForm{
+.messageSubmitForm {
   display: flex;
   padding: 1rem;
   align-items: center;
@@ -127,20 +127,20 @@ body {
   bottom: 0;
 }
 
-.userBox{
-  padding: .8rem 1rem;
+.userBox {
+  padding: 0.8rem 1rem;
   margin-right: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
   font-size: 1.5rem;
-  border: .1rem solid gray;
+  border: 0.1rem solid gray;
 }
 
-.messageInput{
+.messageInput {
   width: 100%;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   outline: none;
   background: rgb(52 61 76);
   border: none;
@@ -150,61 +150,61 @@ body {
   color: gainsboro;
 }
 
-
-.messages{
+.messages {
   padding: 2rem;
 }
 
-.userIcon,.AIIcon{
+.userIcon,
+.AIIcon {
   font-size: 1.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-family: Open Sans;
   width: 8rem;
   text-align: center;
   margin-right: 2rem;
 }
 
-.userIcon{
+.userIcon {
   color: gainsboro;
   background: rgb(28 32 38);
 }
 
-.AIIcon{
+.AIIcon {
   color: rgb(173 163 189);
   background: rgb(31 33 47);
 }
 
-.userMessage{
+.userMessage {
   display: flex;
   align-items: center;
 }
 
-.message{
+.message {
   font-size: 1.3rem;
   width: -webkit-fill-available;
   padding: 1.5rem;
 }
 
-.AIMessage{
+.AIMessage {
   border: 1px solid rgba(128, 128, 128, 0.295);
   background: rgb(27 33 37);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.buttons{
+.buttons {
   position: absolute;
   width: -webkit-fill-available;
   text-align: center;
   top: -4rem;
 }
 
-.formBtn{
+.formBtn {
   margin: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background: rgb(45, 54, 68);
   border: 1px solid rgba(128, 128, 128, 0.253);
   color: gainsboro;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-family: Open Sans;
 }
@@ -220,7 +220,8 @@ body {
   color: rgb(114, 0, 208);
 }
 
-.api-table th, .api-table td {
+.api-table th,
+.api-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -238,17 +239,16 @@ body {
   margin-right: 5px;
 }
 
-
 /* Add API KEY CSS */
 
-.addAPIContainer .formBtn{
+.addAPIContainer .formBtn {
   background: rgb(51, 151, 190);
   color: white;
   float: right;
   padding: 1rem 2rem;
 }
 
-.modalContainer{
+.modalContainer {
   position: absolute;
 
   width: 100%;
@@ -338,36 +338,36 @@ label[for="cardName"] {
   color: #333;
 }
 
-.modalContainer form{
+.modalContainer form {
   display: flex;
   width: fit-content;
   padding: 4rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.233);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   flex-direction: column;
   background: white;
   width: 25%;
   position: relative;
 }
 
-.modalContainer form input{
+.modalContainer form input {
   padding: 1rem;
   margin: 1.5rem 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   outline: none;
   border: 1px solid gray;
   font-family: Poppins;
   font-size: 1.4rem;
 }
 
-.modalContainer .submitBtn{
+.modalContainer .submitBtn {
   background: blueviolet;
   color: white;
   border-radius: 5rem;
   font-family: Open Sans;
 }
 
-.closeBtn{
+.closeBtn {
   color: red;
   font-family: Open Sans;
   outline: none;
