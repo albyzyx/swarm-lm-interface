@@ -300,7 +300,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .card {
   border: 1px solid #ccc;
   padding: 10px;
@@ -308,21 +307,30 @@ body {
   transition: box-shadow 0.3s ease;
   border-radius: 4px;
   background-color: #fff;
+  flex-direction: row;
+  
+}
+
+.cards {
+
+  display: flex; /* Make the card a flex container */
+  flex-direction: row; /* Arrange items in a column */
+  justify-content: space-between; /* Space elements evenly */
 }
 
 .card:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 }
 
-.card h2 {
-  margin-bottom: 5px;
+.card.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
 }
 
+.card h2,
 .card p {
   margin: 0;
 }
-
 label[for="cardName"] {
   display: block;
   font-size: 14px;
