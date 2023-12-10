@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
-// import './APITable.css'; // Import your CSS file
+import React, { useState, useEffect } from 'react';
 
 const APITable = () => {
   const [selectedRows, setSelectedRows] = useState([]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from local storage
+    const storedData = localStorage.getItem('selectedCardData');
+    if (storedData) {
+      setData(JSON.parse(storedData));
+    }
+  }, []); // Empty dependency array ensures this effect runs only once on component mount
 
   const handleCheckboxChange = (id) => {
     const newSelectedRows = selectedRows.includes(id)
@@ -17,13 +25,6 @@ const APITable = () => {
     console.log('Selected Rows:', selectedRows);
     // You can perform additional actions with the selected rows here
   };
-
-  const data = [
-    { id: 1, name: 'GeraMaster1', apiKey: "_dsfjdasjdlfjlsdfjlsjdflsa", disabled: "no", pin: 545646, dupeFolding: "N" },
-    { id: 2, name: 'Ishkan', apiKey: "_kljlkjlkjlasdkkdsladfjlka", disabled: "no", pin: 654654, dupeFolding: "N" },
-    { id: 3, name: 'Jenny', apiKey: "_kljlkjlkjlasdkkdsladfjlka", disabled: "no", pin: 654654, dupeFolding: "N" }
-  ];
-
   return (
     <table className="api-table">
       <thead>
@@ -31,9 +32,9 @@ const APITable = () => {
           <th>Checkbox</th>
           <th>Name</th>
           <th>API Key</th>
-          <th>Disabled</th>
-          <th>PIN</th>
-          <th>Dupe Folding</th>
+          <th>Modal Name</th>
+          <th>Price Pool</th>
+          <th>Gpu Specification</th>
         </tr>
       </thead>
       <tbody>
@@ -46,11 +47,11 @@ const APITable = () => {
                 onChange={() => handleCheckboxChange(row.id)}
               />
             </td>
-            <td>{row.name}</td>
+            <td>{row.inputName}</td>
             <td>{row.apiKey}</td>
-            <td>{row.disabled}</td>
-            <td>{row.pin}</td>
-            <td>{row.dupeFolding}</td>
+            <td>{row.totalRecords}</td>
+            <td>{row.price}</td>
+            <td>{row.gpu}</td>
             {/* Add more cells based on your data structure */}
           </tr>
         ))}
