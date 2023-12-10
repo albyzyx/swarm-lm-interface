@@ -39,7 +39,7 @@ function Chat() {
         })
         .join("\n") + "\n### Assistant:";
     console.log(formattedString);
-    fetch("http://130.250.185.236:31321/api/v1/generate", {
+    fetch("/llm-api/api/v1/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
