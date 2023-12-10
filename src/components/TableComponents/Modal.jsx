@@ -70,29 +70,30 @@ export const Modal = ({ handleModal, data }) => {
   };
   const handleSaveToLocalStorage = (e) => {
     e.preventDefault();
-    // // Save the selected card data in local storage
-    // if (cardData && inputName) {
-    //   const apiKey = (Math.random() + 1).toString(36).substring(18);
+    // Save the selected card data in local storage
+    if (cardData && inputName) {
+      const apiKey = (Math.random() + 1).toString(36).substring(18);
 
-    //   const dataToStore = {
-    //     ...cardData,
-    //     apiKey: apiKey,
-    //     inputName: inputName,
-    //   };
-    //   const previousData = JSON.parse(
-    //     localStorage.getItem("selectedCardData") || "[]"
-    //   );
-    //   localStorage.setItem(
-    //     "selectedCardData",
-    //     JSON.stringify([...previousData, dataToStore])
-    //   );
-    // }
+      const dataToStore = {
+        ...cardData,
+        apiKey: apiKey,
+        inputName: inputName,
+      };
+      const previousData = JSON.parse(
+        localStorage.getItem("selectedCardData") || "[]"
+      );
+      localStorage.setItem(
+        "selectedCardData",
+        JSON.stringify([...previousData, dataToStore])
+      );
+    }
     write({
       args: [
         "0x1b1a2A4276E73c074134bB01069F16F44fA6049e",
         parseEther(inputCredit),
       ],
     });
+    handleModal();
   };
   return (
     <div className="modalContainer">
